@@ -1,39 +1,39 @@
-&lt;;?xml version=&quot1;.0&quot; encoding=&quot;UTF-8&quot;?&gt;;
-&lt;;table&gt;;
-    &lt;row&gt;
-        &lt;condition&gt;Equal to&lt;/condition&gt;
-        &lt;operator&gt;=&lt;/operator&gt;
-        &lt;formulaExample&gt;=A1=B1&lt;/formulaExample&gt;
-        &lt;description&gt;The formula returns TRUE if a value in cell A1 is equal to the values in cell B1; FALSE otherwise.&lt;/description&gt;
-    &lt;/row&gt;
-    &lt;row&gt;
-        &lt;condition&gt;Not equal to&lt;/condition&gt;
-        &lt;operator&gt;&lt;![CDATA[&lt;&gt;]]&gt;&lt;/operator&gt;
-        &lt;formulaExample&gt;=A1&lt;![CDATA[&lt;&gt;]]&gt;B1&lt;/formulaExample&gt;
-        &lt;description&gt;The formula returns TRUE if a value in cell A1 is not equal to the value in cell B1; FALSE otherwise.&lt;/description&gt;
-    &lt;/row&gt;
-    &lt;row&gt;
-        &lt;condition&gt;Greater than&lt;/condition&gt;
-        &lt;operator&gt;&lt;![CDATA[&gt;]]&gt;&lt;/operator&gt;
-        &lt;formulaExample&gt;=A1&lt;![CDATA[&gt;]]&gt;B1&lt;/formulaExample&gt;
-        &lt;description&gt;The formula returns TRUE if a value in cell A1 is greater than a value in cell B1; otherwise it returns FALSE.&lt;/description&gt;
-    &lt;/row&gt;
-    &lt;row&gt;
-        &lt;condition&gt;Less than&lt;/condition&gt;
-        &lt;operator&gt;&lt;![CDATA[&lt;]]&gt;&lt;/operator&gt;
-        &lt;formulaExample&gt;=A1&lt;![CDATA[&lt;]]&gt;B1&lt;/formulaExample&gt;
-        &lt;description&gt;The formula returns TRUE if a value in cell A1 is less than in cell B1; FALSE otherwise.&lt;/description&gt;
-    &lt;/row&gt;
-    &lt;row&gt;
-        &lt;condition&gt;Greater than or equal to&lt;/condition&gt;
-        &lt;operator&gt;&lt;![CDATA[&gt;]]&gt;=&lt;/operator&gt;
-        &lt;formulaExample&gt;=A1&lt;![CDATA[&gt;]]&gt;=B1&lt;/formulaExample&gt;
-        &lt;description&gt;The formula returns TRUE if a value in cell A1 is greater than or equal to the values in cell B1; FALSE otherwise.&lt;/description&gt;
-    &lt;/row&gt;
-    &lt;row&gt;
-        &lt;condition&gt;Less than or equal to&lt;/condition&gt;
-        &lt;operator&gt;&lt;![CDATA[&lt;]]&gt;=&lt;/operator&gt;
-        &lt;formulaExample&gt;=A1&lt;![CDATA[&lt;]]&gt;=B1&lt;/formulaExample&gt;
-        &lt;description&gt;The formula returns TRUE if a value in cell A1 is less than or equal to the values in cell B1; FALSE otherwise.&lt;/description&gt;
-    &lt;/row&gt;
-&lt;/table&gt;
+<?xml version="1.0" encoding="UTF-8"?>
+<table>
+    <row>
+        <condition>Equal to</condition>
+        <operator>=</operator>
+        <formulaExample>=A1=B1</formulaExample>
+        <description>The formula returns TRUE if a value in cell A1 is equal to the values in cell B1; FALSE otherwise.</description>
+    </row>
+    <row>
+        <condition>Not equal to</condition>
+        <operator>&lt;&gt;</operator>
+        <formulaExample>=A1&lt;&gt;B1</formulaExample>
+        <description>The formula returns TRUE if a value in cell A1 is not equal to the value in cell B1; FALSE otherwise.</description>
+    </row>
+    <row>
+        <condition>Greater than</condition>
+        <operator>&gt;</operator>
+        <formulaExample>=A1&gt;B1</formulaExample>
+        <description>The formula returns TRUE if a value in cell A1 is greater than a value in cell B1; otherwise it returns FALSE.</description>
+    </row>
+    <row>
+        <condition>Less than</condition>
+        <operator>&lt;</operator>
+        <formulaExample>=A1&lt;B1</formulaExample>
+        <description>The formula returns TRUE if a value in cell A1 is less than in cell B1; FALSE otherwise.</description>
+    </row>
+    <row>
+        <condition>Greater than or equal to</condition>
+        <operator>&gt;=</operator>
+        <formulaExample>=A1&gt;=B1</formulaExample>
+        <description>The formula returns TRUE if a value in cell A1 is greater than or equal to the values in cell B1; FALSE otherwise.</description>
+    </row>
+    <row>
+        <condition>Less than or equal to</condition>
+        <operator>&lt;=</operator>
+        <formulaExample>=A1&lt;=B1</formulaExample>
+        <description>The formula returns TRUE if a value in cell A1 is less than or equal to the values in cell B1; FALSE otherwise.</description>
+    </row>
+</table>
