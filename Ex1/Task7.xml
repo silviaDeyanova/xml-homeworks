@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bk:book xmlns:bk="http://sernaferna.com/bk"
+    xmlns:rec="http://sernaferna.com/rec">
+    <bk:title>A true story</bk:title>
+    <bk:description>A real cool publication</bk:description>
+
+    <rec:record>
+        <rec:name>Miller</rec:name>
+        <rec:title>Dr. </rec:title>
+        <rec:publications> ... </rec:publications>
+    </rec:record>
+</bk:book>
