@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cinema>
+    <information>
+        <address>София, бул. Черни връх 100, в сградата на Paradise Center</address>
+        <phone>02 903 74 74</phone>
+        <email>info.paradise@cinemacity.bg</email>
+    </information>
+
+    <program>
+        <movie name="100% Вълк">
+            <projection>
+                <date>24 октомври (неделя)</date>
+                <time>11:30, 13:40</time>
+            </projection>
+            <projection>
+                <date>25 октомври (понеделник)</date>
+                <time>13:40</time>
+            </projection>
+            <projection>
+                <date>26 октомври (вторник)</date>
+                <time>13:40</time>
+            </projection>
+            <projection>
+                <date>27 октомври (сряда)</date>
+                <time>13:40</time>
+            </projection>
+            <projection>
+                <date>28 октомври (четвъртък)</date>
+                <time>13:40</time>
+            </projection>
+        </movie>
+        <movie name="Бебе Бос: Семейни работи">
+            <projection>
+                <date>24 октомври (неделя)</date>
+                <time>11:10, 13:50</time>
+            </projection>
+            <projection>
+                <date>25 октомври (понеделник)</date>
+                <time>13:50</time>
+            </projection>
+            <projection>
+                <date>26 октомври (вторник)</date>
+                <time>13:50</time>
+            </projection>
+            <projection>
+                <date>27 октомври (сряда)</date>
+                <time>13:50</time>
+            </projection>
+            <projection>
+                <date>28 октомври (четвъртък)</date>
+                <time>13:50</time>
+            </projection>
+        </movie>
+    </program>
+</cinema>
