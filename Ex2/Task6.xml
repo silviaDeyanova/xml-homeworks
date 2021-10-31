@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE games SYSTEM "Task6-DTD.dtd">
+<games>
+    <game result="7-0">
+        <home-team>Levski Sofia</home-team>
+        <ex-team>Septemvri Simitli</ex-team>
+        <scores>
+            <score>
+                <player>Marin Petkov</player>
+                <time>20</time>
+            </score>
+            <score>
+                <player>Bilal Bari</player>
+                <time>22</time>
+            </score>
+            <score>
+                <player>Bilal Bari</player>
+                <time>27</time>
+            </score>
+            <score>
+                <player>Georgi Milanov</player>
+                <time>68</time>
+            </score>
+            <score>
+                <player>Bilal Bari</player>
+                <time>70</time>
+            </score>
+            <score>
+                <player>Borislav Tsonev</player>
+                <time>80</time>
+            </score>
+            <score>
+                <player>Dimitar Kostadinov</player>
+                <time>82</time>
+            </score>
+        </scores>
+        <yellows>
+            <player>Radoslav Tsonev</player>
+            <player>Adrian Kraev</player>
+        </yellows>
+        <reds>
+            <player>-</player>
+        </reds>
+    </game>
+</games>
