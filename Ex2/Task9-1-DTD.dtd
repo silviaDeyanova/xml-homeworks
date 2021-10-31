@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ENTITY % included "INCLUDE">
+<![%included;[<!ELEMENT channel (item+,title,link,description)>]]>
+<!ENTITY % ignored "IGNORE">
+<![%ignored;[<!ELEMENT channel (image*,language?)>]]>
+<!ATTLIST channel version CDATA #REQUIRED>
+<!ELEMENT item ((title,link,description?)|(link,title,description?)|(description?,title,link))>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT link (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT image ((title,link,url)|(link,title,url)|(url,title,link))>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT language (#PCDATA)>
