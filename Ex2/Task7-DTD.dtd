@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ENTITY % titleEnt "title">
+<!ENTITY % channelEnt "(item+,%titleEnt;,link,image*,language?,description)">
+<!ELEMENT channel %channelEnt;>
+<!ATTLIST channel version CDATA #REQUIRED>
+<!ENTITY % itemEnt "((%titleEnt;,link,description?)|(link,%titleEnt;,description?)|(description?,%titleEnt;,link))">
+<!ELEMENT item %itemEnt;>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT link (#PCDATA)>
+<!ENTITY site "https://www.imdb.com/title/tt10919420/">
+<!ELEMENT description (#PCDATA)>
+<!ENTITY % imageEnt "((%titleEnt;,link,url)|(link,%titleEnt;,url)|(url,%titleEnt;,link))">
+<!ELEMENT image %imageEnt;>
+<!ATTLIST image src ENTITY #IMPLIED> 
+<!NOTATION JPG SYSTEM "image/jpeg">
+<!ENTITY jpgEnt SYSTEM "https://phantom-marca.unidadeditorial.es/8256e68fdfac5b6a6c792af7308d27e8/crop/0x0/1597x899/resize/1320/f/jpg/assets/multimedia/imagenes/2021/10/01/16330974723192.jpg" NDATA JPG>
+<!NOTATION PNG PUBLIC "image.png" "PNG">
+<!ENTITY pngEnt PUBLIC "image.png" "https://phantom-marca.unidadeditorial.es/8256e68fdfac5b6a6c792af7308d27e8/crop/0x0/1597x899/resize/1320/f/jpg/assets/multimedia/imagenes/2021/10/01/16330974723192.jpg" NDATA PNG>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT language (#PCDATA)>

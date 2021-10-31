@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE channel[
-<!ELEMENT channel (item+,title,link,image*,language?,description)>
-<!ATTLIST channel version CDATA #REQUIRED>
-<!ELEMENT item ((title,link,description?)|(link,title,description?)|(description?,title,link))>
-<!ELEMENT title (#PCDATA)>
-<!ELEMENT link (#PCDATA)>
-<!ELEMENT description (#PCDATA)>
-<!ELEMENT image ((title,link,url)|(link,title,url)|(url,title,link))>
-<!ELEMENT url (#PCDATA)>
-<!ELEMENT language (#PCDATA)>
-]>
+<!DOCTYPE channel SYSTEM "Task7-DTD.dtd">
 <channel version="1.0">
     <item>
         <title>Squid Game</title>
@@ -18,6 +8,11 @@
     </item>
     <title>Netflix</title>
     <link>https://www.netflix.com/bg/</link>
+    <image src="jpgEnt">
+        <link>&site;</link>
+        <title>Main</title>
+        <url>https://phantom-marca.unidadeditorial.es/8256e68fdfac5b6a6c792af7308d27e8/crop/0x0/1597x899/resize/1320/f/jpg/assets/multimedia/imagenes/2021/10/01/16330974723192.png</url>
+    </image>
     <language>English</language>
     <description>Movies</description>
 </channel>
