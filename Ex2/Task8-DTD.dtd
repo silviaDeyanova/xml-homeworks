@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!ELEMENT Course_Catalog (Department+)>
-<!ATTLIST Course_Catalog Year CDATA #REQUIRED>
+<!ATTLIST Course_Catalog Year CDATA #FIXED "2017-2018">
 <!ELEMENT Department (Title, Course+, ((Professor+, Lecturer+)+|Professor*))>
 <!ATTLIST Department Code ID #REQUIRED
                     Chair IDREF #REQUIRED>
