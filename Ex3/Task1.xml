@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<collection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Task1-XSD.xsd">
+    <description>Рецепта</description>
+    <recipe>
+        <title>Musli закуска</title>
+        <ingredient name="Musli" amount="100" unit="g">
+            <preparation>
+                <step>Изсипваме мюслито в купа</step>
+            </preparation>
+        </ingredient>
+        <ingredient name="Кисело мляко" amount="250" unit="g">
+            <preparation>
+                <step>Изсипваме киселото мляко в купата с Мюслито</step>
+                <step>Разбъркваме</step>
+            </preparation>
+        </ingredient>
+        <ingredient name="Мед" amount="20" unit="g">
+            <preparation>
+                <step>Изсипваме меда в купата с Мюслито и киселото мляко</step>
+                <step>Разбъркваме меда в купата</step>
+            </preparation>
+        </ingredient>
+        <preparation>
+            <step>Сипваме мюслито</step>
+            <step>Сипваме киселото мляко в купата</step>
+            <step>Слагаме мед</step>
+            <step>Разбъркваме всичко до добър завършен вид</step>
+        </preparation>
+        <comment>Добър апетит</comment>
+        <nutrition protein="30" carbohydrates="80" fat="20" calories="400"/>
+    </recipe>
+</collection>
