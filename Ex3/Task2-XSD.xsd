@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="bank">
+        <xs:complexType>
+            <!-- Редът на елементите не е от значение - тага "all" -->
+            <xs:all>
+                <!-- Локално дефиниран елемент "accounts", докато останалите елементи в документа, които имат атрибут "ref" са глобални. -->
+                <xs:element name="accounts">
+                    <xs:complexType>
+                        <xs:all>
+                            <xs:element ref="saving_accounts"/>
+                            <xs:element ref="checking_accounts"/>
+                        </xs:all>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element ref="customers"/>
+                <xs:element ref="customer_accounts"/>
+            </xs:all>
+        </xs:complexType>
+
+        <!-- Ключове и референции към ключове - постига се унникалността на идентификаторите на клиентите и на сметките и реферирането. -->
+        <xs:key name="accountKey">
+            <xs:selector xpath=".//saving_account|.//checking_account"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
+
+        <xs:key name="customerKey">
+            <xs:selector xpath=".//customer"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
+
+        <xs:keyref name="accountRef" refer="accountKey">
+            <xs:selector xpath=".//customer_account"/>
+            <xs:field xpath="@ac_id"/>
+        </xs:keyref>
+
+        <xs:keyref name="customerRef" refer="customerKey">
+            <xs:selector xpath=".//customer_account"/>
+            <xs:field xpath="@c_id"/>
+        </xs:keyref>
+    </xs:element>
+
+    <xs:element name="saving_accounts">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="saving_account" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="saving_account">
+        <xs:complexType>
+            <xs:choice>
+                <xs:element name="balance">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                            <xs:minInclusive value="-500"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+            </xs:choice>
+            <xs:attribute name="id" type="xs:string" use="required"/>
+            <xs:attribute name="interest" type="xs:decimal" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="checking_accounts">
+        <xs:complexType>
+            <xs:choice>
+                <xs:element ref="checking_account" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:choice>
+
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="checking_account">
+        <xs:complexType>
+            <xs:choice>
+                <xs:element name="balance">
+                    <xs:simpleType>
+                        <!-- Рестрикция, според която минималната стойност на елемента "balance" е -500. -->
+                        <xs:restriction base="xs:integer">
+                            <xs:minInclusive value="-500"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+            </xs:choice>
+
+            <xs:attribute name="id" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="customers">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="customer" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="customer">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name"/>
+                <xs:element name="address"/>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="customer_accounts">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="customer_account" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="customer_account">
+        <xs:complexType>
+            <xs:attribute name="c_id" type="xs:string" use="required"/>
+            <xs:attribute name="ac_id" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
