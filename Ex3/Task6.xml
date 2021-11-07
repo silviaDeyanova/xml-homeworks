@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Task6-XSD-4.xsd">
+    <order xmlns="http://example.org/ord"
+        xmlns:product="http://example.org/product">
+        <number>1234</number>
+        <items>
+            <product xmlns="http://example.org/product">
+                <number product:id="prod_5">5</number>
+                <name xmlns="">Apple</name>
+                <prod:quantity system="US-FRUIT">2</prod:quantity>
+                <prod:color xmlns:product="http://example.org/prod2" product:value="green"/>
+            </product>
+        </items>
+    </order>
+</package>
+
+<!-- Използвани са няколко xsd схеми, като всяка включва схема с пространства от имена -->
