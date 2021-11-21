@@ -22,7 +22,7 @@
                 <!-- Аналогично и за същите елементи, но в намаляващ ред. -->
                 <h3>Descending</h3>
                 <xsl:for-each select=".//track">
-                    <xsl:sort select="." order="ascending"/>
+                    <xsl:sort select="." order="descending"/>
                     <xsl:value-of select="text()"/>
                     <xsl:text>_</xsl:text>
                     <xsl:value-of select="position()"/>
