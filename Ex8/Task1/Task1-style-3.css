@@ -1,0 +1,39 @@
+@import url("Task1-style-1.css");
+@import url("Task1-style-2.css");
+
+/* Импортиране на дефиниции */
+
+ol li li {
+  color: #660000;
+  background-color: white;
+  list-style-type: lower-alpha;
+}
+a:link {
+  color: blue;
+  background-color: white;
+  text-decoration: none;
+}
+a:active {
+  color: blue;
+  background-color: red;
+  text-decoration: none;
+}
+a:visited {
+  color: blue;
+  background-color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: purple;
+  background-color: yellow;
+  text-decoration: underline;
+}
+
+/* Промяна на създаден преди това стил, цветът се променя */
+h1 {
+  color: #af0e0e;
+  background-color: white;
+  margin-left: 100px;
+  text-align: center;
+  text-transform: uppercase;
+}
