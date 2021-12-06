@@ -1,0 +1,73 @@
+textinput * {
+  display: block;
+  background-color: rgb(31, 206, 230);
+  color: rgb(14, 14, 238);
+  font-size: 15px;
+}
+
+item title {
+  display: block;
+  background-color: white;
+  color: black;
+}
+item description {
+  display: block;
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  text-indent: 20px;
+  margin: 10px;
+}
+item link {
+  display: block;
+  background-color: rgb(128, 0, 96);
+  color: blue;
+  font-size: 14px;
+  text-indent: 20px;
+}
+@media screen and (min-width: 480px) {
+  item title {
+    display: block;
+    background-color: rgb(170, 170, 12);
+    color: black;
+    font-size: 12px;
+    text-indent: 20px;
+  }
+  item description {
+    display: block;
+    background-color: rgb(185, 66, 155);
+    color: rgba(0, 0, 0, 0.699);
+    font-size: 18px;
+    text-indent: 20px;
+  }
+  item link {
+    display: block;
+    background-color: rgb(57, 141, 9);
+    color: rgba(0, 0, 255, 0.836);
+    font-size: 11px;
+    text-indent: 20px;
+  }
+}
+@media print {
+  item title {
+    display: block;
+    background-color: rgb(214, 8, 42);
+    color: black;
+    font-size: 12px;
+    text-indent: 20px;
+  }
+  item description {
+    display: block;
+    background-color: rgb(189, 83, 189);
+    color: black;
+    font-size: 15px;
+    text-indent: 20px;
+  }
+  item link {
+    display: block;
+    background-color: rgb(71, 167, 15);
+    color: rgba(0, 0, 255, 0.836);
+    font-size: 11px;
+    text-indent: 20px;
+  }
+}
