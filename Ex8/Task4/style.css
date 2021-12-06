@@ -1,0 +1,73 @@
+body {
+  border-left: 5px solid #5f96be;
+  border-right: 5px solid #5f96be;
+  height: 100vh;
+  padding: 1rem;
+  color: brown;
+  width: 65vh;
+}
+
+/* Първият параграф ще бъде стилизиран */
+p:first-of-type {
+  color: yellow;
+  background-color: green;
+}
+
+/* Последният параграф ще бъде стилизиран */
+p:last-of-type {
+  color: blue;
+}
+
+/* Стил за последния div */
+div:last-of-type {
+  color: green;
+}
+
+/* Всички елементи с атрибут lang, имащ стойност en-us */
+[lang="en-us"] {
+  color: black;
+}
+
+p.warning {
+  color: red;
+}
+p.warning span[lang="en-us"] {
+  color: green;
+  background-color: white;
+}
+p.warning span {
+  background-color: yellow;
+  color: blue;
+}
+
+/* Елемент с id maincontent */
+#maincontent {
+  border: 1px solid blue;
+  color: black;
+}
+
+span.warning {
+  color: red;
+}
+
+div:first-of-type {
+  color: orange;
+  text-transform: uppercase;
+  padding-left: 20px;
+}
+
+span + div {
+  color: red;
+}
+
+/* Първия ред на последния елемент параграф */
+p:last-of-type:first-line {
+  background-color: green;
+  color: yellow;
+}
+
+/* Първата буква на последния елемент параграф ще бъде главна */
+p:last-of-type:first-letter {
+  color: orange;
+  font-size: 30px;
+}
