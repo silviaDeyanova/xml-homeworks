@@ -1,0 +1,66 @@
+body {
+  background-color: #ffff00;
+}
+
+body a:link {
+  color: #00ff00;
+}
+
+.title {
+  color: #008080;
+  font-size: 25px;
+  font-family: Arial;
+}
+
+.normalText {
+  color: #996600;
+  font-family: Arial;
+}
+
+.centeredTableData {
+  text-align: center;
+  background-color: #00ff00;
+  border: 1px solid #111111;
+  width: 50%;
+}
+
+.centeredBlueTableData {
+  text-align: center;
+  background-color: #00ffff;
+  border: 1px solid #111111;
+  width: 50%;
+}
+
+.valueData {
+  background-color: #00ff00;
+  border: 1px solid #111111;
+  width: 50%;
+}
+
+table {
+  padding: 0px;
+  border-spacing: 0px;
+  border-collapse: collapse;
+  border: 3px solid #111111;
+  width: 50%;
+}
+
+.alignedValueData {
+  text-align: right;
+  background-color: #00ff00;
+  border: 1px solid #111111;
+  width: 50%;
+}
+
+.valueDataBlue {
+  background-color: #00ffff;
+  border: 1px solid #111111;
+  width: 50%;
+}
+
+.alignedValueDataBlue {
+  text-align: right;
+  background-color: #00ffff;
+  border: 1px solid #111111;
+  width: 50%;
+}
