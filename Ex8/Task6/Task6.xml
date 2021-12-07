@@ -1,0 +1,26 @@
+<book xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Task6.xsd">
+    <!-- Валидиране на xml документа спрямо дадената схема -->
+    <chapters>
+        <!-- Включване на първия xml документ -->
+        <xi:include href="Task6_1.xml" parse="xml">
+            <xi:fallback >
+                <chapter>
+                    <content>
+                   N.A.
+                    </content>
+                </chapter>
+            </xi:fallback>
+        </xi:include>
+        <!-- Включване на втория xml документ -->
+        <xi:include href="Task6_2.xml" parse="xml">
+            <xi:fallback >
+                <chapter>
+                    <content>
+                   N.A.
+                    </content>
+                </chapter>
+            </xi:fallback>
+        </xi:include>
+    </chapters>
+</book>
