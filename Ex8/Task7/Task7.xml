@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<book xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Task7.xsd">
+    <!-- Валидиране на xml документа спрямо дадената схема -->
+    <chapters>
+        <!-- Връзка към елемента с id number1 -->
+        <chapter xlink:type="simple" xlink:href="Task7_1.xml#xpointer(id('number1'))" xlink:show="new">
+            <content>
+                Introduction
+            </content>
+        </chapter>
+        <!-- Връзка към елемента с id number2 -->
+        <chapter xlink:type="simple" xlink:href="Task7_1.xml#xpointer(id('number2'))" xlink:show="new">
+            <content>
+               Chapter1
+            </content>
+        </chapter>
+    </chapters>
+</book>
